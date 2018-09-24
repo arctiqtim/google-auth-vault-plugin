@@ -3,7 +3,7 @@ steps:
   args: ['install', '.']
   env: ['PROJECT_ROOT=github.com/arctiqtim/google-auth-vault-plugin']
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'google-auth-vault-plugin']
+  args: ['build', '.']
   env: ['PROJECT_ROOT=github.com/arctiqtim/google-auth-vault-plugin']
 artifacts:
   objects:
