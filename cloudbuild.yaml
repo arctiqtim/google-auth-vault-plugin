@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/go'
   args: ['install', '.']
-  env: ['PROJECT_ROOT=main']
+  env: ['PROJECT_ROOT=github.com/arctiqtim/google-auth-vault-plugin']
 - name: 'gcr.io/cloud-builders/go'
   args: ['build', 'google-auth-vault-plugin']
-  env: ['PROJECT_ROOT=main']
+  env: ['PROJECT_ROOT=github.com/arctiqtim/google-auth-vault-plugin']
 artifacts:
   objects:
     location: 'gs://controlstation1-artifacts/'
