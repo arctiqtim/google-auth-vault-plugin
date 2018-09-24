@@ -1,4 +1,4 @@
-DOCKER_IMAGE_NAME ?= grapeshot/google-auth-vault-plugin
+DOCKER_IMAGE_NAME ?= arctiqtim/google-auth-vault-plugin
 
 google-auth-vault-plugin: $(shell find . -name *.go)
 	go build -o google-auth-vault-plugin ./

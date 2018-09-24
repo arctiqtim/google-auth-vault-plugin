@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', '.']
+artifacts:
+  objects:
+    location: 'gs://controlstation1-artifacts/'
+    paths: ['google-auth-vault-plugin']
